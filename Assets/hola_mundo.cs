@@ -15,8 +15,27 @@ public class hola_mundo : MonoBehaviour
     {
         
     }
+    public int num1;
+    public int num2;
     public void hola()
     {
-        Debug.Log("Hola mundo");
+        if (num1 == num2 || num2 > num1)
+        {
+            Debug.Log("Error. Asegúrese de que num1 sea mayor que num2");
+        }
+        else
+        {
+            while (num1 >= num2)
+            {
+                Debug.Log(num1);
+                num1--;
+            }
+        }
+        /*int i = 1;
+        while (i < 101)
+        {
+            Debug.Log(i);
+            i++;
+        }*/
     }
 }
